@@ -549,23 +549,32 @@ footer ul li a{
         display: block;
     }
     header{
+        top: 0rem;
         padding: 1rem 5rem;
         gap: 3rem;
     }
     header .logo{
         font-size: 1.5rem;
     }
+    .info-box h1{
+        font-size: 3rem;
+        font-weight: 600;
+    }
 
     .aboutme-container img{
-        width: 50vw;
+        width: 70vw;
     }
     .input-box input{
-        padding: 0.5rem 3rem;
-        width: 80%;
+        padding: 0.5rem 1rem;
+        width: 100%;
         font-size: 1.5rem;
     }
     .input-box input::placeholder{
-        font-size: 1.5;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .input-box h2{
+        font-size: 3.5rem;
     }
     footer ul{
         gap: 1rem;
