@@ -550,6 +550,7 @@ footer ul li a{
     }
     header{
         top: 0rem;
+        height: 15vw;
         padding: 1rem 5rem;
         gap: 3rem;
     }
@@ -560,9 +561,13 @@ footer ul li a{
         font-size: 3rem;
         font-weight: 600;
     }
-
+    .aboutme .aboutme-container{
+        margin-top: -40px;
+    }
     .aboutme-container img{
         width: 70vw;
+        margin-top: -13px;
+        margin-bottom: -40px;
     }
     .input-box input{
         padding: 0.5rem 1rem;
