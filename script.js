@@ -113,3 +113,45 @@ const navLinks = document.querySelector('.nav-links');
 menuIcon.onclick = () => {
     navLinks.classList.toggle('active');
 }
+
+const contactForm = document.getElementById("contact-form");
+const formMessage = document.getElementById("form-message");
+
+contactForm.addEventListener("submit", async (event) => {
+
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    try {
+
+        const response = await fetch("https://formspree.io/f/xzezwaby", {
+            method: "POST",
+            body: formData,
+            headers: {
+                "Accept": "application/json"
+            }
+        });
+
+        if (response.ok) {
+
+            formMessage.textContent = "Message sent successfully!";
+            formMessage.className = "success";
+
+            contactForm.reset();
+
+        } else {
+
+            formMessage.textContent = "Something went wrong. Please try again.";
+            formMessage.className = "error";
+
+        }
+
+    } catch (error) {
+
+        formMessage.textContent = "Something went wrong. Please try again.";
+        formMessage.className = "error";
+
+    }
+
+});

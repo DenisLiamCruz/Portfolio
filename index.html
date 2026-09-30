@@ -174,20 +174,39 @@
     </section>
 
     <section class="contact" id="contact">
-        <div class="input-box">
+        <div class="input-box" >
 
             <h2 class="section-title">Contact Me</h2>
 
-            <div class="input">
-                <input type="text" placeholder="example@email.com">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="btn">Submit</div>
+            <form id="contact-form">
+
+                <div class="input">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required
+                    >
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="input">
+                    <textarea
+                        name="message"
+                        placeholder="Your message"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+
+            </form>
+
+            <p id="form-message"></p>
 
         </div>
-
-
     </section>
+
 
     <footer>
 
