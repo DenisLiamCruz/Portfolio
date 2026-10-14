@@ -117,7 +117,7 @@ const translations = {
         contact: "Contacto",
 
         saludo: "Hola, soy",
-        detalles: "Desarrollador de videojuegos / Artista / Programador",
+        detalles: "Programador | Artista\nDesarrollador de Videojuegos",
 
         gamesTitle1: "Unarmed to the bone",
         gamesSubtitle1: "Ganador de b3agz Game Jam 2024",
@@ -159,7 +159,7 @@ const translations = {
         contact: "Contact",
 
         saludo: "Hi, I'm",
-        detalles: "Game Developer / Artist / Programmer",
+        detalles: "Programmer | Artist\nGame Developer",
 
         gamesTitle1: "Unarmed to the bone",
         gamesSubtitle1: "Winner of the b3agz Game Jam 2024",
