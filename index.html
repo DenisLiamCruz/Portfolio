@@ -14,11 +14,11 @@
         <a href="#" class="logo"><span>Denis Cruz</span></a>
 
         <ul class="nav-links">
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#games">Games</a></li>
-            <li><a href="#3dworks">3D Works</a></li>
-            <li><a href="#pixelart">Pixel Art</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#aboutme" data-i18n="navAboutMe">Sobre mí</a></li>
+            <li><a href="#games" data-i18n="navGames">Juegos</a></li>
+            <li><a href="#3dworks" data-i18n="nav3DWorks">Trabajos 3D</a></li>
+            <li><a href="#pixelart" data-i18n="navPixelArt">Pixel Art</a></li>
+            <li><a href="#contact" data-i18n="contact">Contacto</a></li>
         </ul>
 
 
@@ -36,15 +36,25 @@
         <div class="aboutme-container">
             <img src="Images/Profile.jpg" alt="">
             <div class="info-box">
+
+                <div class="language-switch">
+                    <button id="lang-es" class="active" type="button">
+                        Español
+                    </button>
+                    <button id="lang-en" type="button">
+                        English
+                    </button>
+                </div>
+
                 <div class="text">
-                    <h3>Hi, I'm</h3>
+                    <h3 data-i18n="saludo">Hola, Soy</h3>
                     <h1>Denis Cruz</h1>
-                    <span>Game Developer / Artist / Programmer</span>
+                    <span data-i18n="detalles">Desarrollador de Videojuegos / Artista / Programador</span>
                 </div>
 
                 <div class="btn-group">
-                    <a href="CV-DenisLiamCruz.pdf" download class="btn">Download CV</a>
-                    <a href="#contact" class="btn">Contact</a>
+                    <a href="CV-DenisLiamCruz.pdf" download class="btn" data-i18n="downloadCV">Descargar CV</a>
+                    <a href="#contact" class="btn" data-i18n="contact">Contacto</a>
                 </div>
 
                 <div class="socials">
@@ -68,7 +78,7 @@
     </section>
 
     <section id="games" class="games">
-        <h2 class="section-title">Games</h2>
+        <h2 class="section-title" data-i18n="navGames">Juegos</h2>
 
         <div class="games-info">
 
@@ -78,9 +88,9 @@
                 rel="noopener noreferrer"
                 class="grid-card">
                     <img src="Images/UnnarmedToTheBone.jpg" alt="Unarmed to the Bone">
-                    <span>Unarmed to the bone</span>
-                    <h3>Winner of the b3agz Game Jam 2024</h3>
-                    <p>Solo Developed</p>
+                    <span data-i18n="gamesTitle1">Unarmed to the bone</span>
+                    <h3 data-i18n="gamesSubtitle1">Ganador de b3agz Game Jam 2024</h3>
+                    <p data-i18n="gamesDescription1">Desarrollado solo</p>
                 </a>
 
                 <a href="https://denis1243.itch.io/unnarmed-to-the-bone"
@@ -88,9 +98,9 @@
                 rel="noopener noreferrer"
                 class="grid-card">
                     <img src="Images/ProjectPharus.jpg" alt="">
-                    <span>Project Pharus</span>
-                    <h3>Participant of the EVA 2026</h3>
-                    <p>3D Artist and Animator</p>
+                    <span data-i18n="gamesTitle2">Project Pharus</span>
+                    <h3 data-i18n="gamesSubtitle2">Participante de la EVA 2026</h3>
+                    <p data-i18n="gamesDescription2">Artista 3D y Animador</p>
                 </a>
 
                 <a href="https://carpinchos-company.itch.io/rapido-y-carpinchoso"
@@ -98,19 +108,18 @@
                 rel="noopener noreferrer"
                 class="grid-card">
                     <img src="Images/RapidoYCarpinchoso.jpg" alt="">
-                    <span>Rapido y Carpinchoso</span>
-                    <h3>Winner of the BA Game Jam C40</h3>
-                    <p>Only Programmer</p>
+                    <span data-i18n="gamesTitle3">Rapido y Carpinchoso</span>
+                    <h3 data-i18n="gamesSubtitle3">Ganador de la BA Game Jam C40</h3>
+                    <p data-i18n="gamesDescription3">Único Programador</p>
                 </a>
 
             </div>
-
         </div>
     </section>
 
 
     <section id="3dworks" class="threeDWorks">
-        <h2 class="section-title">3D Works</h2>
+        <h2 class="section-title" data-i18n="nav3DWorks">Trabajos 3D</h2>
 
         <div class="threeDWorks-grid">
 
@@ -142,14 +151,14 @@
 
                 </div>
 
-                <h3>Donut and Glass</h3>
+                <h3 data-i18n="donutTitle">Dona y Copa</h3>
 
                 <div class="btn-group">
                     <a href="https://www.instagram.com/p/CL5fZ21jRnW/?hl=en&img_index=1" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="btn">
-                        Instagram Post
+                        class="btn" data-i18n="instagramPost">
+                        Publicación de Instagram
                     </a>
                 </div>
 
@@ -201,14 +210,14 @@
 
                 </div>
 
-                <h3>32x32 Characters</h3>
+                <h3 data-i18n="pixelartTitle">Personajes 32x32</h3>
 
                 <div class="btn-group">
                     <a href="https://www.instagram.com/p/CH5wW0yD3Iy/?hl=en&img_index=1" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="btn">
-                        Instagram Post
+                        class="btn" data-i18n="instagramPost">
+                        Publicación de Instagram
                     </a>
                 </div>
 
@@ -226,7 +235,7 @@
     <section class="contact" id="contact">
         <div class="input-box" >
 
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title" data-i18n="contactTitle">Contáctame</h2>
 
             <form id="contact-form">
 
@@ -234,7 +243,8 @@
                     <input
                         type="email"
                         name="email"
-                        placeholder="example@email.com"
+                        placeholder="ejemplo@tuCorreo.com"
+                        data-i18n-placeholder="emailPlaceholder"
                         required
                     >
                     <i class="fa-solid fa-envelope"></i>
@@ -243,12 +253,13 @@
                 <div class="input">
                     <textarea
                         name="message"
-                        placeholder="Your message"
+                        placeholder="Escribe tu mensaje"
+                        data-i18n-placeholder="messagePlaceholder"
                         required
                     ></textarea>
                 </div>
 
-                <button type="submit" class="submit-btn">Submit</button>
+                <button type="submit" class="submit-btn" data-i18n="submit">Enviar</button>
 
             </form>
 
@@ -261,13 +272,13 @@
     <footer>
 
         <ul>
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#games">Games</a></li>
-            <li><a href="#3dworks">3D Works</a></li>
-            <li><a href="#pixelart">Pixel Art</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#aboutme" data-i18n="navAboutMe">Sobre mí</a></li>
+            <li><a href="#games" data-i18n="navGames">Juegos</a></li>
+            <li><a href="#3dworks" data-i18n="nav3DWorks">Trabajos 3D</a></li>
+            <li><a href="#pixelart" data-i18n="navPixelArt">Pixel Art</a></li>
+            <li><a href="#contact" data-i18n="navContact">Contacto</a></li>
         </ul>
-        <p>© 2026 Denis Cruz. All rights reserved.</p>
+        <p data-i18n="footerCopyright">© 2026 Denis Cruz. Todos los derechos reservados.</p>
     </footer>
 
 
