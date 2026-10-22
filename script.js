@@ -46,6 +46,13 @@ document.querySelectorAll(".slider-container").forEach((container) => {
     function showImage(index) {
         currentImage = index;
 
+        // Pausar los videos al cambiar de diapositiva
+        images.forEach((slide, i) => {
+            if (slide.tagName === "VIDEO" && i !== currentImage) {
+                slide.pause();
+            }
+        });
+
         slider.style.transform =
             `translateX(-${currentImage * 100}%)`;
 
@@ -133,6 +140,11 @@ const translations = {
 
         threeDTitle: "Trabajos 3D",
         donutTitle: "Dona y copa",
+        assetsPharusTitle:"Assets para Proyecto Pharus",
+        KITTitle:"Personaje Low Poly: Kit de Gameoverse",
+        KitchenTitle:"Assets Low Poly para una Cocina",
+        RadioTitle:"Radio High Poly y Retopologia",
+        MonsterFatTitle:"Animación y Texturizado de Monstruo Grande para Proyecto Pharus",
         pixelartTitle: "Personajes 32x32",
 
         contactTitle: "Contáctame",
@@ -175,6 +187,11 @@ const translations = {
 
         threeDTitle: "3D Works",
         donutTitle: "Donut and Glass",
+        assetsPharusTitle:"Assets for Project Pharus",
+        KITTitle:"Low Poly Character: Kit from Gameoverse",
+        KitchenTitle:"Low Poly Kitchen Assets",
+        RadioTitle:"Radio High Poly and Retopology",
+        MonsterFatTitle:"Animation and Texturing of Big Monster for Project Pharus",
         pixelartTitle: "32x32 Characters",
 
         contactTitle: "Contact Me",

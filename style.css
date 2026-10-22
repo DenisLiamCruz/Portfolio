@@ -270,7 +270,7 @@ section{
 }
 .threeDWorks-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
 }
 .threeDWorks-card{
@@ -323,6 +323,7 @@ section{
     height: 100%;
     flex: 0 0 100%;
     object-fit: contain;
+    min-width: 0;
 }
 
 .slider-arrow {
@@ -395,6 +396,13 @@ section{
     opacity: 1;
 }
 
+video.slider-image {
+    height: calc(100% - 15px);
+    align-self: center;
+    background-color: black;
+    border-radius: 1rem;
+    object-fit: contain;
+}
 
 /*================== Pixel Art Section ==================*/
 #pixelart {
