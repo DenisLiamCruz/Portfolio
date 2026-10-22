@@ -694,6 +694,9 @@ footer ul li a{
 }
 
 @media(max-width:1000px){
+    .threeDWorks-grid{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
     .pixelart-grid{
         grid-template-columns: repeat(1,1fr);
     }
