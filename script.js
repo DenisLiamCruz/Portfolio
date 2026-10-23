@@ -144,6 +144,7 @@ const translations = {
         KITTitle:"Personaje Low Poly: Kit de Gameoverse",
         KitchenTitle:"Assets Low Poly para una Cocina",
         RadioTitle:"Radio High Poly y Retopologia",
+        MonsterThinTitle: "Monstruo Delgado para Proyecto Pharus",
         MonsterFatTitle:"Animación y Texturizado de Monstruo Grande para Proyecto Pharus",
         pixelartTitle: "Personajes 32x32",
 
@@ -191,6 +192,7 @@ const translations = {
         KITTitle:"Low Poly Character: Kit from Gameoverse",
         KitchenTitle:"Low Poly Kitchen Assets",
         RadioTitle:"Radio High Poly and Retopology",
+        MonsterThinTitle:"Thin Monster for Project Pharus",
         MonsterFatTitle:"Animation and Texturing of Big Monster for Project Pharus",
         pixelartTitle: "32x32 Characters",
 
